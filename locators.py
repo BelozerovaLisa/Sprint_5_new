@@ -5,9 +5,9 @@ class Locators:
     # кнопка Зарегистрироваться
     REG_BUTTON = (By.XPATH, "//a[@href = '/register']")
     # поле ввода имени
-    NAME = (By.XPATH,"//fieldset[1]/div/div/input")
+    NAME = (By.XPATH,"//label[contains(text(),'Имя')]/parent::div/input[@class = 'text input__textfield text_type_main-default']")
     # поле ввода логина
-    EMAIL_ON_REG = (By.XPATH, "//fieldset[2]/div/div/input")
+    EMAIL_ON_REG = (By.XPATH, "//label[contains(text(),'Email')]/parent::div/input[@class = 'text input__textfield text_type_main-default']")
     # поле ввода логина на странице авторизации
     EMAIL_ON_LOG = (By.XPATH, "//div/input[@type = 'text']")
     # поле вода пароля
